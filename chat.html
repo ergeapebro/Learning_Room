@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Room</title>
+    <link rel="stylesheet" href="chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script type="module" src="lr.js"></script>
+
+
+</head>
+<body>
+    <div class="nav">
+        <img src="assetlr/Learning Room.svg" alt="">
+        <nav class="navigation">
+            <ul>
+                <li><img src="assetlr/FORUMtxt.svg" alt=""></li>
+            </ul>
+        </nav>
+        <nav class="navigation-2">
+            <div class="icon" onclick="notif()">
+                <img src="assetlr/notif.svg" alt=""> <span>3</span>
+            </div>
+            <div class="notifi-box" id="box">
+                <h2>NOTIFIKASI </h2>
+
+                <div class="notifi-item"  id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki 1 pesan pribadi (leni) </p> <br>
+                    </div>
+                    <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b" >
+                   <div  class="belumdibaca" >
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda telah mengirimkan tugas untuk matkul database </p><br>
+                    </div>
+                        <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki pesan pribadi (murni) 2 </p><br>
+                    </div>
+                        <p1>hari ini</p1>                  
+                </div>
+    
+                <div class="notifi-item"id="b" >
+                    <div id="h" class="sudahdibaca" >
+                        <p>Anda telah mengirimkan tugas untuk matkul jaringan </p>  
+                    </div>
+                         <p1>kemarin</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div id="h" class="sudahdibaca">
+                        <p>Anda telah mengirimkan tugas untuk matkul kalkulus </p>   
+                    </div>
+                        <p1>3 hari yang lalu</p1>                
+                </div>
+
+                <div class="notifi-item">
+                    <div class="hapusriwayat">
+                    <button class="hapus" onclick="happus();" >Hapus riwayat notifikasi</p3></div>                    
+                    </div>
+                </div>
+                
+            <li><a href="lrprofil.html">
+                <img src="assetlr/Ellipse 2.svg" alt="">
+            </a></li>
+            <li><a href="pengaturan.html">
+                <img src="assetlr/setting.svg" alt="">
+            </a></li>
+            <li><a href="learningroom_3655.html">
+                <input class="btn" type="button" id="exit" value="Keluar">
+            </a></li>
+        </nav>
+    </div>
+    <div class="aside">
+        <div class="sidebar-sisi">
+            <img src="assetlr/opt.svg" alt="">
+            <hr>
+        </div>
+        <ul class="list">
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/dashboard.svg" alt=""></span>
+                <span class="teks">Dashboard</span>
+            </a></li>
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/course.svg" alt=""></span>
+                <span class="teks">Course</span>
+            </a></li>
+            <li class="list-item"><a href="assigned.html">
+                <span class="ikon"><img src="assetlr/to do.svg" alt=""></span>
+                <span class="teks">To Do</span>
+            </a></li>
+            <li class="list-item"><a href="chat.html">
+                <span class="ikon"><img src="assetlr/forum.svg" alt=""></span>
+                <span class="teks">Forum</span>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="col-user">
+                <div class="head-user">
+                    <span>User 1</span>
+                    <i class="far fa-edit edit"></i>
+                </div>
+                <div class="content-user">
+                    <span><b>Pesan</b></span>
+                    <span class="text-blue">2 Pesan belum dibaca</span>
+                </div><hr>
+                <div class="user-chat">
+                    <img src="assetlr/user2.png">
+                    <div class="text-chat-user">
+                        <span class="chat-username">Kevin</span><br>
+                        <span class="chat-time">2 jam lalu</span>
+                    </div>
+                </div><br><hr>
+
+                <div class="user-chat">
+                    <img src="assetlr/user3.png">
+                    <div class="text-chat-user">
+                        <span class="chat-username">Leni</span><br>
+                        <span class="chat-time">40 menit yang lalu</span>
+                    </div>
+                    <div class= "red-circle"></div>
+                </div><br><hr>
+
+                <div class="user-chat">
+                    <img src="assetlr/user4.png">
+                    <div class="text-chat-user">
+                        <span class="chat-username">Murni</span><br>
+                        <span class="chat-time">45 menit yang lalu</span>
+                    </div>
+                    <div class="red-circle"></div>
+                </div><br><hr>
+                <div class="user-chat">
+                    <img src="assetlr/grup.svg">
+                    <div class="text-chat-user">
+                        <span class="chat-username">Grup A</span><br>
+                        <span class="chat-time">Murni : Oke</span>
+                    </div>
+                </div><br><hr>
+                <div class="user-chat">
+                    <img src="assetlr/grup.svg">
+                    <div class="text-chat-user">
+                        <span class="chat-username">Grup B</span><br>
+                        <span class="chat-time">Tama : Semlidut</span>
+                    </div>
+                </div><br><hr>
+                
+            </div>
+            <div class="col-chat">
+                <div class="head-chat">
+                    <div class="col-user-chat">
+                        <img src="assetlr/user2.png" class="col-p-head">
+                        <div class="text-chat-user">
+                            <span class="col-username">Kevin</span><br>
+                            <span class="chat-time">2 jam lalu</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-chat">
+                    <img src="assetlr/user2.png" class="col-p">
+                    <div class="chat">
+                        Halo
+                    </div>
+                </div>
+                <div class="content-chat">
+                    <img src="assetlr/user2.png" class="col-p">
+                    <div class="chat">
+                        Bagaimana kabarmu?
+                    </div>
+                </div>
+
+                <div class="chat-reply">
+                    Kabarku baik. Bagaimana denganmu? Apakah kuliahmu lancar?
+                </div>
+                <div class="input-chat">
+                    <i class="far fa-smile-beam"></i>
+                    <input type="text" placeholder="kirim pesan...">
+                    <i class="far fa-file-alt"></i>
+                    <i class="far fa-paper-plane"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lr.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Room</title>
+    <link rel="stylesheet" href="submit.css">
+    <script type="module" src="lr.js"></script>
+
+</head>
+<body>
+    <div class="nav">
+        <img src="assetlr/Learning Room.svg" alt="">
+        <nav class="navigation">
+            <ul>
+                <li><img src="assetlr/COURSEtxt.svg" alt=""></li>
+            </ul>
+        </nav>
+        <nav class="navigation-2">
+            <div class="icon" onclick="notif()">
+                <img src="assetlr/notif.svg" alt=""> <span>3</span>
+            </div>
+            <div class="notifi-box" id="box">
+                <h2>NOTIFIKASI </h2>
+
+                <div class="notifi-item"  id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki 1 pesan pribadi (leni) </p> <br>
+                    </div>
+                    <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b" >
+                   <div  class="belumdibaca" >
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda telah mengirimkan tugas untuk matkul database </p><br>
+                    </div>
+                        <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki pesan pribadi (murni) 2 </p><br>
+                    </div>
+                        <p1>hari ini</p1>                  
+                </div>
+    
+                <div class="notifi-item"id="b" >
+                    <div id="h" class="sudahdibaca" >
+                        <p>Anda telah mengirimkan tugas untuk matkul jaringan </p>  
+                    </div>
+                         <p1>kemarin</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div id="h" class="sudahdibaca">
+                        <p>Anda telah mengirimkan tugas untuk matkul kalkulus </p>   
+                    </div>
+                        <p1>3 hari yang lalu</p1>                
+                </div>
+
+                <div class="notifi-item">
+                    <div class="hapusriwayat">
+                    <button class="hapus" onclick="happus();" >Hapus riwayat notifikasi</p3></div>                    
+                    </div>
+                </div>
+                
+            <li><a href="lrprofil.html">
+                <img src="assetlr/Ellipse 2.svg" alt="">
+            </a></li>
+            <li><a href="pengaturan.html">
+                <img src="assetlr/setting.svg" alt="">
+            </a></li>
+            <li><a href="learningroom_3655.html">
+                <input class="btn" type="button" id="exit" value="Keluar">
+            </a></li>
+        </nav>
+    </div>
+    <div class="aside">
+        <div class="sidebar-sisi">
+            <img src="assetlr/opt.svg" alt="">
+            <hr>
+        </div>
+        <ul class="list">
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/dashboard.svg" alt=""></span>
+                <span class="teks">Dashboard</span>
+            </a></li>
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/course.svg" alt=""></span>
+                <span class="teks">Course</span>
+            </a></li>
+            <li class="list-item"><a href="assigned.html">
+                <span class="ikon"><img src="assetlr/to do.svg" alt=""></span>
+                <span class="teks">To Do</span>
+            </a></li>
+            <li class="list-item"><a href="chat.html">
+                <span class="ikon"><img src="assetlr/forum.svg" alt=""></span>
+                <span class="teks">Forum</span>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="judul">
+            <p>ST122 - PEMROGRAMAN LANJUT - [ 20S1IF06-AdvProg(ST122) ] - P</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <div id="box-1">
+            <p>Tugas Pertemuan ke-2</p>
+            <hr align="right" width="95%" height = "10px" color="#B6E5FF" size="6"> 
+            <h6>Status Pengiriman</h6>
+        </div>
+
+        <div class="boxSubmid">
+            <div id="box-2">
+                
+            </div>
+
+            <div class="inputBerkas">
+                <div id="box-3">
+
+                    <p>Jawaban Anda</p>
+
+                    <li><a href="">
+                        <img src="assetlr/WindowPlus.svg" alt="" style="margin-top: -33px; float: right; width: 45px; ">
+                    </a></li>
+
+                    <button type="submit">Kumpulkan</button>
+                    
+
+                </div>
+
+            </div>
+    
+        </div>
+
+        
+
+        
+        <div id="box-4">
+            
+            <p id="lampiran" style="margin-left: 55px;">lampiran :</p>
+
+            
+                <a id="link" href="https://drive.google.com/file/d/1h5jE6e3gs2QVrtk0qW-VexwtpxZsYpm5/view?usp=sharing"><p>Visual Studio.NET.pdf</p> </a>
+            
+
+        </div>
+
+        <div id="box-5">
+            
+            <p id="waktu" style="margin-left: 55px;">Tenggat waktu :</p>
+
+            
+                <p>Senin, 17 Agustus 2022 - 23.59 PM</p>
+            
+
+        </div>
+
+        <div id="box-6">
+            
+            <p id="catatan" style="margin-left: 55px;">Catatan :</p>
+
+            
+                <p>dikerjakan sesuai yang ada di modul</p>
+            
+
+        </div>
+
+        <div id="box-7">
+            
+            <p id="status" style="margin-left: 55px;">Status Penilaian :</p>
+
+            
+                <p style="color: #2c2727b2; font-style: italic;">Belum ada nilai</p>
+            
+
+        </div>
+
+       
+    </div>
+
+    <script src="lr.js"></script>
+</body>
+</html>

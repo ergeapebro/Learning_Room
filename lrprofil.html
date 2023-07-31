@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Room</title>
+    <link rel="stylesheet" href="lrprofil.css">
+    <script type="module" src="lr.js"></script>
+
+</head>
+<body>
+    <div class="nav">
+        <img src="assetlr/Learning Room.svg" alt="">
+        <nav class="navigation">
+            <ul>
+                <li><img src="assetlr/PROFIL.svg" alt=""></li>
+            </ul>
+        </nav>
+        <nav class="navigation-2">
+            <div class="icon" onclick="notif()">
+                <img src="assetlr/notif.svg" alt=""> <span>3</span>
+            </div>
+            <div class="notifi-box" id="box">
+                <h2>NOTIFIKASI </h2>
+
+                <div class="notifi-item"  id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki 1 pesan pribadi (leni) </p> <br>
+                    </div>
+                    <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b" >
+                   <div  class="belumdibaca" >
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda telah mengirimkan tugas untuk matkul database </p><br>
+                    </div>
+                        <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki pesan 2 pribadi (murni)</p><br>
+                    </div>
+                        <p1>hari ini</p1>                  
+                </div>
+    
+                <div class="notifi-item"id="b" >
+                    <div id="h" class="sudahdibaca" >
+                        <p>Anda telah mengirimkan tugas untuk matkul jaringan </p>  
+                    </div>
+                         <p1>kemarin</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div id="h" class="sudahdibaca">
+                        <p>Anda telah mengirimkan tugas untuk matkul kalkulus </p>   
+                    </div>
+                        <p1>3 hari yang lalu</p1>                
+                </div>
+
+                <div class="notifi-item">
+                    <div class="hapusriwayat">
+                    <button class="hapus" onclick="happus();" >Hapus riwayat notifikasi</p3></div>                    
+                    </div>
+                </div>
+                
+            <li><a href="">
+                <img src="assetlr/Ellipse 2.svg" alt="">
+            </a></li>
+            <li><a href="pengaturan.html">
+                <img src="assetlr/setting.svg" alt="">
+            </a></li>
+            <li><a href="learningroom_3655.html">
+                <input class="btn" type="button" id="exit" value="Keluar">
+            </a></li>
+        </nav>
+    </div>
+    <div class="aside">
+        <div class="sidebar-sisi">
+            <img src="assetlr/opt.svg" alt="">
+            <hr>
+        </div>
+        <ul class="list">
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/dashboard.svg" alt=""></span>
+                <span class="teks">Dashboard</span>
+            </a></li>
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/course.svg" alt=""></span>
+                <span class="teks">Course</span>
+            </a></li>
+            <li class="list-item"><a href="assigned.html">
+                <span class="ikon"><img src="assetlr/to do.svg" alt=""></span>
+                <span class="teks">To Do</span>
+            </a></li>
+            <li class="list-item"><a href="chat.html">
+                <span class="ikon"><img src="assetlr/forum.svg" alt=""></span>
+                <span class="teks">Forum</span>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="user">USER PROFIL</div>
+            <div><img src="assetlr/Ellipse 4.svg" alt=""></div>
+            <div class="name">Nama - NIM</div><br>
+            <div class="Ubah">
+                <a href="lrupdate.html"><p><button class="bold">Ubah Profil</button></p></a>
+                <a href="lrpass.html"><p><button class="bold">Ubah Kata Sandi</button></p></a>
+                <a href="lrno.html"><p><button class="bold">Ubah Nomor Telepon</button></p></a>
+            </div>
+            
+        </div>
+        <div class="article">
+            <div class="data">
+                DATA LENGKAP MAHASISWA<br><br>
+                <label for="name">Nama Lengkap</label><br>
+                <input type="text" placeholder="  Nama Lengkap"><br>
+                <label for="nim">Nomor Induk Mahasiswa</label><br>
+                <input type="text" placeholder="  Nomor Induk Mahasiswa"><br>
+                <label for="fakultas">Fakultas</label><br>
+                <input type="text" placeholder="  Fakultas"><br>
+                <label for="prodi">Program Studi</label><br>
+                <input type="text" placeholder="  Program Studi"><br>
+                <label for="ttl">Tempat Tanggal Lahir</label><br>
+                <input type="text" placeholder="  Tempat Tanggal Lahir"><br>
+                <label for="agama">Agama</label><br>
+                <input type="text" placeholder="  Agama"><br>
+                <label for="address">Alamat Asal</label><br>
+                <input type="text" placeholder="  Alamat Asal"><br>
+                <label for="telp">Nomor Telepon</label><br>
+                <input type="text" placeholder="  Nomor Telepon">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="lr.js"></script>
+</body>
+</html>

@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*font-family: 'Montserrat', sans-serif;*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    height: 87px;
+    width: 100%;
+    background-color: #003CD7;
+    flex: 5;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.nav img{
+    margin-top: 15px;
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+.navigation{
+    display:inline-flex;
+    padding-left: 25px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.navigation-2{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    align-items: center;
+    padding: auto;
+}
+
+.btn{
+    color: #003CD7;
+    background-color: #B6E5FF;
+    font: 600 15px 'Montserrat', sans-serif;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    border: 0px;
+    margin: 17px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+li{
+    display: inline;
+    text-align: right;
+}
+
+.aside{
+    float: left;
+    flex: 1;
+    inset: 20px 0 20px 20px;
+    background-color:  #1FAEFF;
+    width: 78px;
+    height: 100vh;
+}
+
+.aside.buka {
+    width: 200px;
+  }
+
+.aside .sidebar-sisi img{
+    cursor: pointer;
+    padding: 15px 23px;
+    align-items: center;
+}
+
+.sidebar-sisi img{
+    margin: 5px 0px 0px 0px;
+}
+.aside .sidebar-sisi img::before {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    transform: translateY(-8px);
+    transition: 0.5s;
+}
+
+.aside.buka .sidebar-sisi img::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.aside .sidebar-sisi img::after {
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    transform: translateY(8px);
+    transition: 0.5s;
+}
+  
+.aside.buka .sidebar-sisi img::after {
+    transform: translateY(0) rotate(-45deg);
+    box-shadow: none;
+}
+.sidebar-sisi hr{
+    margin: 0px 10px 0px 10px;
+    color:#B6E5FF;
+}
+.list{
+    margin-top: 20px;
+}
+.teks{
+    font: 600 18px 'Montserrat', sans-serif;
+}
+.aside ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.aside ul li {
+    list-style: none;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.aside ul li.aktif {
+    transform: translateX(30px);
+}
+  
+.aside.buka ul li.aktif {
+    transform: translateX(10px);
+}
+  
+.aside ul li a {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+}
+
+.aside ul li a .ikon {
+    position: relative;
+    display: block;
+    min-width: 55px;
+    height: 55px; 
+    transition: 0.5s;
+}
+
+.aside ul li.aktif a .ikon {
+    color: #fff;
+
+}
+
+.aside ul li.aktif a .ikon::before {
+    opacity: 0.5;
+}
+  
+  .aside ul li a .teks{
+    position: relative;
+    padding: 0 15px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+  
+.aside.buka ul li a .teks {
+    opacity: 1;
+    visibility: visible;
+}
+
+.icon {
+	cursor: pointer;
+	margin-right: 10px;
+	line-height: 50px;
+}
+.icon span {
+	background: #f00;
+	padding: 7px;
+	border-radius: 50%;
+	color: #fff;
+	vertical-align: top;
+	margin-left: -25px;
+}
+.icon img {
+	display: inline-block;
+	width: 30px;
+	margin-top: 20px;
+}
+.icon:hover {
+	opacity: .7;
+}
+
+.logo {
+	flex: 1;
+	margin-left: 50px;
+	color: #eee;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+.notifi-box {
+	width: 300px;
+	height: 0px;
+	opacity: 0;
+	position: absolute;
+	top: 78px;
+	right: 15px;
+    background-color: #fff;
+	transition: 1s opacity, 250ms height;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.notifi-box h2 {
+	font: italic 600 16px 'Montserrat', sans-serif;
+	padding: 10px;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	color: #2C2727;
+    ;
+}
+.notifi-box h2 span {
+	color: #f00;
+}
+.notifi-item p {
+	font: italic 600 14px 'Montserrat', sans-serif;
+}
+
+.notifi-item .sudahdibaca {
+	padding-left: 40px;
+	display: flex;
+    color:#262121B2;
+
+}
+.belumdibaca{
+	display: flex;
+	margin-right: 20px;
+    color: #003CD7;
+}
+.notifi-item .belumdibaca img{
+	width: 12px;
+	height: 11px;
+	margin-bottom: 10px;
+}
+.notifi-item p1 {
+	color: #262121B2;
+	margin-left: 40px;
+	font: italic 200 12px 'Montserrat', sans-serif;
+}
+
+.notifi-item {
+	display: block;
+	border-bottom: 1px solid #eee;
+	padding: 15px 5px;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.notifi-item:hover {
+	background-color: #eee;
+}
+.notifi-item img {
+	display: block;
+	width: 50px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.hapusriwayat{
+	text-align: center;
+}
+
+.hapus{
+	font: italic 600 15px 'Montserrat', sans-serif;
+	width: 250px;
+	height: 20px;
+	cursor: pointer;
+    border: none;
+}
+
+.container{
+    display: flex;
+    padding: 35px;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    padding: 10px;
+}
+
+.col-user {
+    width: 35%;
+    height: 100%;
+    background-color: #FBF8F1;
+    border: 1px solid #003CD7; 
+    border-radius: 15px 0px 0px 15px;
+}
+
+.col-chat {
+    width: 65%;
+    height: 100%;
+    background-color: #FBF8F1;
+    border: 1px solid #003CD7; 
+    border-radius: 0px 15px 15px 0px;
+}
+
+.head-user {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid #003CD7;
+    border-radius: 15px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+    background-color: #B6E5FF;
+    color: #003CD7;
+}
+
+.fa-edit{
+    cursor: pointer;
+}
+
+.content .col-user .head-user span{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edit {
+    float: right;
+    padding-right: 15px;
+}
+
+.content-user {
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.text-blue {
+    color: #047cc4;
+    float: right;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.user-chat {
+    display: flex;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.chat-username{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.text-chat-user {
+    margin-left: 20px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.chat-time {
+    color:  #262121B2;
+    font-size: 13px;
+}
+
+.red-circle {
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 10px;
+	height: 10px;
+	background: red;
+	border-radius: 100%;
+}
+
+.head-chat {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #003CD7;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.col-user-chat {
+    display: flex;
+    padding-left: 20px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.col-p-head {
+    width: 80px;
+    height: 80px;
+}
+
+.col-username {
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.content-chat {
+    display: flex;
+    padding: 20px;
+}
+
+.head-chat{
+    background-color: #B6E5FF;
+}
+
+.chat-p {
+    height: 30px;
+    width: 30px;
+}
+
+.chat {
+    border: 1px solid #dedcdc;
+    background-color: #d4e9f6;
+    margin-left: 10px;
+    max-width: 200px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.chat-reply {
+    float: right;
+    max-width: 200px;
+    background-color: #d4e9f6;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.input-chat {
+    position: flex; 
+    padding: 10px;
+    margin-top: 320px;
+    margin-left: 10px;
+    width: 95%;
+    border: 1px solid #afaeae;
+    border-radius: 20px;
+}
+
+.input-chat i {
+    margin-left: 10px;
+}
+
+.input-chat input {
+    width: 88%;
+    border: 1px solid transparent;
+}

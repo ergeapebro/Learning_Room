@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Room</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script type="module" src="lr.js"></script>
+
+</head>
+<body>
+    <div class="nav">
+        <img src="assetlr/Learning Room.svg" alt="">
+        <nav class="navigation">
+            <ul>
+                <li><img src="assetlr/DASHBOARD text.svg" alt=""></li>
+            </ul>
+        </nav>
+        <nav class="navigation-2">
+            <div class="icon" onclick="notif()">
+                <img src="assetlr/notif.svg" alt=""> <span>3</span>
+            </div>
+            <div class="notifi-box" id="box">
+                <h2>NOTIFIKASI </h2>
+
+                <div class="notifi-item"  id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki 1 pesan pribadi (leni) </p> <br>
+                    </div>
+                    <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b" >
+                   <div  class="belumdibaca" >
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda telah mengirimkan tugas untuk matkul database </p><br>
+                    </div>
+                        <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki pesan pribadi (murni) 2 </p><br>
+                    </div>
+                        <p1>hari ini</p1>                  
+                </div>
+    
+                <div class="notifi-item"id="b" >
+                    <div id="h" class="sudahdibaca" >
+                        <p>Anda telah mengirimkan tugas untuk matkul jaringan </p>  
+                    </div>
+                         <p1>kemarin</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div id="h" class="sudahdibaca">
+                        <p>Anda telah mengirimkan tugas untuk matkul kalkulus </p>   
+                    </div>
+                        <p1>3 hari yang lalu</p1>                
+                </div>
+
+                <div class="notifi-item">
+                    <div class="hapusriwayat">
+                    <button class="hapus" onclick="happus();" >Hapus riwayat notifikasi</p3></div>                    
+                    </div>
+                </div>
+                
+            <li><a href="lrprofil.html">
+                <img src="assetlr/Ellipse 2.svg" alt="">
+            </a></li>
+            <li><a href="pengaturan.html">
+                <img src="assetlr/setting.svg" alt="">
+            </a></li>
+            <li><a href="learningroom_3655.html">
+                <input class="btn" type="button" id="exit" value="Keluar">
+            </a></li>
+        </nav>
+    </div>
+    <div class="aside">
+        <div class="sidebar-sisi">
+            <img src="assetlr/opt.svg" alt="">
+            <hr>
+        </div>
+        <ul class="list">
+            <li class="list-item"><a href="">
+                <span class="ikon"><img src="assetlr/dashboard.svg" alt=""></span>
+                <span class="teks">Dashboard</span>
+            </a></li>
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/course.svg" alt=""></span>
+                <span class="teks">Course</span>
+            </a></li>
+            <li class="list-item"><a href="assigned.html">
+                <span class="ikon"><img src="assetlr/to do.svg" alt=""></span>
+                <span class="teks">To Do</span>
+            </a></li>
+            <li class="list-item"><a href="chat.html">
+                <span class="ikon"><img src="assetlr/forum.svg" alt=""></span>
+                <span class="teks">Forum</span>
+            </a></li>
+        </ul>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <div class="course">
+            <header>
+                <h3>Course Overview</h3>
+                <div class="show">
+                <h4>Show</h4>
+                <select class="nameshow" name="show1">
+                    <option value="all">All</option>
+                    <option value="a-z">A-Z</option>
+                </select>
+                </div>
+            </header>
+            <br><hr>
+            <section class="container2">
+                <div class="card">
+                    <a href="Materi.html">
+                    <div class="card-image c-1"></div>
+                    <pre style="font-size: 30px;"> Course 1  - T          <img src="assetlr/prc75.png" class="gbr">   75%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-2"></div>
+                    <pre style="font-size: 30px;"> Course 2  - P          <img src="assetlr/prc70.png" class="gbr">   70%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-3"></div>
+                    <pre style="font-size: 30px;"> Course 3  - T          <img src="assetlr/prc85.png" class="gbr">   85%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-4"></div>
+                    <pre style="font-size: 30px;"> Course 4  - T          <img src="assetlr/prc25.png" class="gbr">   25%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-5"></div>
+                    <pre style="font-size: 30px;"> Course 5  - T          <img src="assetlr/prc100.png" class="gbr">   100%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-6"></div>
+                    <pre style="font-size: 30px;"> Course 6  - P          <img src="assetlr/prc50.png" class="gbr">   50%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-7"></div>
+                    <pre style="font-size: 30px;"> Course 7  - P          <img src="assetlr/prc85.png" class="gbr">   85%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-8"></div>
+                    <pre style="font-size: 30px;"> Course 8  - T          <img src="assetlr/prc85.png" class="gbr">   85%</pre>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                    <div class="card-image c-9"></div>
+                    <pre style="font-size: 30px;"> Course 9  - T          <img src="assetlr/prc35.png" class="gbr">   35%</pre>
+                    </a>
+                </div>
+            </section>
+        </div> 
+    </div>
+
+    <script src="lr.js"></script>
+</body>
+</html>

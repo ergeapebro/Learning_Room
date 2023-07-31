@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Room</title>
+    <link rel="stylesheet" href="lrprofil2.css">
+    <link rel="stylesheet" href="bantuan.css">
+    <link rel="stylesheet" href="lonceng.css">
+
+</head>
+<body>
+    <div class="nav">
+        <img src="assetlr/Learning Room.svg" alt="">
+        <nav class="navigation">
+            <ul>
+                <li><img src="assetlr/BANTUAN & DUKUNGAN.svg" alt=""></li>
+            </ul>
+        </nav>
+        <nav class="navigation-2">
+            <div class="icon" onclick="notif()">
+                <img src="assetlr/notif.svg" alt=""> <span>3</span>
+            </div>
+            <div class="notifi-box" id="box">
+                <h2>Notifikasi </h2>
+
+                <div class="notifi-item"  id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki pesan pribadi (leni) 1 </p><br>
+                       
+
+                    </div>
+                     <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b" >
+                   <div  class="belumdibaca" >
+                    <img src="assetlr/Ellipse 10.png" alt="">
+                    <p>Anda telah mengirimkan tugas untuk matkul database </p><br>
+                   
+                </div>
+                    <p1>hari ini</p1>
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div  class="belumdibaca">
+                        <img src="assetlr/Ellipse 10.png" alt="">
+                        <p>Anda memiliki pesan pribadi (murni) 2 </p><br>
+                      
+                    </div>
+                      <p1>hari ini</p1>                  
+                    </div>
+    
+                <div class="notifi-item"id="b" >
+                    <div id="h" class="sudahdibaca" >
+                    <p4>Anda telah mengirimkan tugas untuk matkul jaringan </p>  
+                   
+                    </div>
+                         <p1>kemarin</p1>
+                  
+                </div>
+    
+                <div class="notifi-item" id="b">
+                    <div id="h" class="sudahdibaca">
+                        <p4>Anda telah mengirimkan tugas untuk matkul kalkulus </p>  
+                        
+                        </div>
+                        <p1>3 hari yang lalu</p1>                
+                </div>
+
+                <div class="notifi-item">
+                    <div class="hapusriwayat">
+                    <button class="hapus" onclick="happus();" >Hapus riwayat notifikasi</p3></div>                    
+                </div>
+    
+            </div>
+                <li><a href="lrprofil.html">
+                    <img src="assetlr/Ellipse 2.svg" alt="">
+                </a></li>
+                <li><a href="pengaturan.html">
+                    <img src="assetlr/setting.svg" alt="">
+                </a></li>
+                <li><a href="learningroom_3655.html">
+                    <input class="btn" type="button" id="exit" value="Keluar">
+                </a></li>
+        </nav>
+    </div>
+    <div class="aside">
+        <div class="sidebar-sisi">
+            <img src="assetlr/opt.svg" alt="">
+            <hr>
+        </div>
+        <ul class="list">
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/dashboard.svg" alt=""></span>
+                <span class="teks">Dashboard</span>
+            </a></li>
+            <li class="list-item"><a href="dashboard.html">
+                <span class="ikon"><img src="assetlr/course.svg" alt=""></span>
+                <span class="teks">Course</span>
+            </a></li>
+            <li class="list-item"><a href="assigned.html">
+                <span class="ikon"><img src="assetlr/to do.svg" alt=""></span>
+                <span class="teks">To Do</span>
+            </a></li>
+            <li class="list-item"><a href="chat.html">
+                <span class="ikon"><img src="assetlr/forum.svg" alt=""></span>
+                <span class="teks">Forum</span>
+            </a></li>
+        </ul>
+    </div>
+ 
+    <div class="containerr">
+        <div class="bantuan">
+            <div class="B"> Bantuan</div>      
+            <div class="Ubah">
+              
+              <button id="hk" class="but"> Hubungi Kami</button>
+              
+              <div id="pop" class="popup">
+                <div class="content">
+                    <div class="header">
+              
+                        <button class="closeBtn">&times;</button>
+              
+                        <h2>Hubungi Kami</h2>
+              
+                    </div>
+                   <div class="dalam">
+                         <div class="wa"> 
+                            <img src="assetlr/wa.png" alt="">
+                            <a href="https://wa.me/6285712005190"><button class="whatsapp">Whatsapp</button></a>
+                        </div></a>
+                        <div class="email">
+                           <img src="assetlr/mail.png" alt="">
+                            <a href="https://mail.google.com/mail/u/0/#inbox"><button class="emaill">E-mail</button></a>
+                        </div>
+                        <div class="wa">                            
+                            <img src="assetlr/telp.png" alt="">
+                            <a href=""><button class="telepon">Telepon</button></a>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="D"> Dukungan</div> 
+            <div class="kritiksaran"> Kritik & Saran</div>     
+            <textarea class="kritik" placeholder="Tulis Pesan...."></textarea><br>
+            <div class="bawah">
+            <button class="kirim"  onClick="alert('Pesan anda telah dikirim')" id="keluar" >KIRIM</button>
+
+            <a href="pengaturan.html"><button class="kembali"  id="kembali" >KEMBALI</button></a>
+            </div>
+
+        </div>
+      
+       </div>
+              
+
+    <script src="bantuan.js"></script>
+</body>
+</html>

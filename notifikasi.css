@@ -1,0 +1,168 @@
+
+
+
+.isi{
+    font: italic 700 22px 'Montserrat', sans-serif;
+}
+
+.isi label{
+font: italic 600 19px 'Montserrat', sans-serif;
+}
+.isi button{
+    width: 660px;
+    border-radius: 8px;
+    width: 100%;
+    height: 50px;
+    margin-left: 200px;
+    padding-top: 5px;
+    text-decoration: none;
+    font: italic 400 16px 'Montserrat', sans-serif;
+    cursor: pointer;
+    border: solid #003CD7;
+}
+ /* The switch - kotak di sekitar slider */
+ .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Sembunyikan checkbox HTML secara default */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0);
+    
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* membuat kotak slider  bulat*/
+  .slider.round {
+    border-radius: 34px;
+  }
+   /*membuat kotak checkbox bulat*/
+  .slider.round:before {
+    border-radius: 50%;
+  }
+.notif button{
+    max-width: 790px;
+    width: 100%;
+    margin-top: 15px;
+    display: inline-block;
+}
+.isi button[class="p"]{
+    color: #003CD7;
+    background-color: #B6E5FF;
+    font-family: 'Montserrat',sans-serif; 
+    font-size: 18px;
+    font-weight: 600;
+    padding-left: 45px;
+    border-radius: 12px;
+    text-decoration: none;
+}
+.notif{
+    background-color:#B6E5FF;
+    width: 1200px;
+    height: 88vh;
+    float: left;
+    margin-left: 100px;
+    padding-top: 30px;
+}
+.pilihan {
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.pilihan .batal{
+    width: 100px;
+    margin-left: 770px ;
+}
+
+.pilihan .simpan{
+    width: 100px;
+    margin-left: 10px;
+}
+.pilihan .batal:hover
+{
+    background: #003CD7;
+}
+
+.pilihan .simpan:hover
+{
+    background: #003CD7;
+}
+
+button[class=button]{
+    background-color: #ffffff;
+    }
+    
+    #slider-nyalakannotifikasiemail {
+        width: 60px;
+        
+        margin-left:385px; 
+      }
+      #slider-izinkankomentar {
+        width: 60px;
+        
+        margin-left:450px; 
+      }
+      #slider-nyalakannotifikasikelas {
+        width: 60px;
+        
+        margin-left:390px; 
+      }
+      #slider-notifikasipengumpulantugas {
+        width: 60px;
+        
+        margin-left:345px; 
+      }
+      #slider-notifikasipesan {
+        width: 60px;
+        
+        margin-left: 340px; 
+      }
+      #slider-notifikasipesangroup {
+        width: 60px;
+        
+        margin-left: 350px; 
+      }
+      #slider-komentar {
+        width: 60px;
+        
+        margin-left:305px; 
+      }

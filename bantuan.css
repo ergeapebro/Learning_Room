@@ -1,0 +1,332 @@
+body{
+    line-height:1.6;
+  
+  }
+  .but{
+    background-color: #ffffff;
+    width: 200px;
+    border-radius: 8px;
+    height: 60px;
+    cursor: pointer;
+    float: left;
+    margin-left: 140px;
+  }
+  
+  .but:hover{
+  
+    background:#003CD7;
+  
+  }
+  .popup{
+  
+    display:none;
+  
+    position: fixed;
+  
+    z-index:1;
+  
+    left: 0;
+  
+    top:0;
+  
+    height: 100%;
+  
+    width:100%;
+  
+    overflow: auto;
+  
+    background-color: rgba(0,0,0,0.5);
+  
+  }
+  .wa,.email{
+    display: flex;
+    font-size: 24px;
+  }
+
+  .wa img,.email img{
+    width: 70px;
+    height: 70px;
+    margin-top: -10px;
+    margin-left: -10px;
+  }
+  .content{
+  
+    background-color:#f4f4f4;
+    margin: 15% auto;
+    width:450px;
+    height: 400px;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name:popupsopen;
+    animation-duration:1s;
+  
+  }
+  .header h2 {
+  
+    margin:0;
+  
+  }
+  .header{
+    background:#003CD7;
+
+    padding:15px;
+  
+    color:#fff;
+  
+  }
+  .dalam{
+  
+    padding:22px 25px;
+  
+  }
+ 
+  .closeBtn{
+  
+    color:rgb(0, 0, 0);
+  
+    float: right;
+  
+    font-size:30px;
+  
+    background-color:#B6E5FF;
+  
+  }
+  .closeBtn:hover{
+  
+    color:rgb(53, 47, 243);
+  
+    text-decoration: none;
+  
+    cursor:pointer;
+  
+  }
+  
+   button[class="whatsapp"]{
+    font-size: 24px;
+  }
+   button[class="emaill"]{
+    font-size: 24px;
+  }
+
+  button[class="telepon"]{
+    font-size: 24px;
+  }
+
+   /* css untuk bantuan*/
+
+   .containerr{
+    display: flex;
+    flex: 2px;
+    padding: 45px 40px 30px 45px;
+}
+.B{
+    margin-top: 100px;
+    margin-left: 140px;
+    font:italic 700 30px 'Montserrat', sans-serif;
+    
+}
+.D{
+   
+    margin-top: 90px;
+    margin-left: 140px;
+    margin-top: 120px;
+    margin-left: 140px;
+    font:italic 700 30px 'Montserrat', sans-serif;
+}
+ .bantuan{
+  background-color:#B6E5FF;
+    width: 1200px;
+    height: 80vh;
+    margin-left: 60px;
+  
+ }
+ .bantuan .button{ 
+    background-color:#B6E5FF;
+    width: 300px;
+    height: 60px;
+    margin-top: 30px;
+    margin-left:140px;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+ }
+ .bantuan button .hubungi a{
+text-decoration: none; 
+}
+.kritiksaran{
+    margin-left:140px;
+    margin-top: 20px;
+    font:italic 700 20px 'Montserrat', sans-serif;
+
+}
+ .kritik{
+    margin-left:140px;
+    margin-top: 15px;
+ }
+
+ .kritik{
+    width: 800px;
+    height: 90px;
+}
+
+
+button[class=kirim]{
+  background-color: #003CD7;
+  margin-left: 820px;
+color: #ffffff;
+  margin-top: 20px;
+  width: 120px;
+  height: 30px;
+  border: none;
+  font: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  border-radius: 5px;
+}
+button[class=kembali]{
+  background-color: #003CD7;
+  margin-left: 820px;
+color: #ffffff;
+  margin-top: 20px;
+  margin-left: -280px;
+  width: 120px;
+  height: 30px;
+  border: none;
+  font: italic;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
+  border-radius: 5px;
+}
+
+.aside{
+  float: left;
+  flex: 1;
+  inset: 20px 0 20px 20px;
+  background-color:  #1FAEFF;
+  width: 78px;
+  height: 100vh;
+}
+
+.aside.buka {
+  width: 200px;
+}
+
+.aside .sidebar-sisi img{
+  cursor: pointer;
+  padding: 15px 23px;
+  align-items: center;
+}
+
+.sidebar-sisi img{
+  margin: 5px 0px 0px 0px;
+}
+.aside .sidebar-sisi img::before {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  transform: translateY(-8px);
+  transition: 0.5s;
+}
+
+.aside.buka .sidebar-sisi img::before {
+  transform: translateY(0) rotate(45deg);
+}
+
+.aside .sidebar-sisi img::after {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  transform: translateY(8px);
+  transition: 0.5s;
+}
+
+.aside.buka .sidebar-sisi img::after {
+  transform: translateY(0) rotate(-45deg);
+  box-shadow: none;
+}
+.sidebar-sisi hr{
+  margin: 0px 10px 0px 10px;
+  color:#B6E5FF;
+}
+.list{
+  margin-top: 20px;
+}
+.teks{
+  font: 600 18px 'Montserrat', sans-serif;
+}
+.aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.aside ul li {
+  list-style: none;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.aside ul li.aktif {
+  transform: translateX(30px);
+}
+
+.aside.buka ul li.aktif {
+  transform: translateX(10px);
+}
+
+.aside ul li a {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: center;
+}
+
+.aside ul li a .ikon {
+  position: relative;
+  display: block;
+  min-width: 55px;
+  height: 55px; 
+  transition: 0.5s;
+}
+
+.aside ul li.aktif a .ikon {
+  color: #fff;
+
+}
+
+.aside ul li.aktif a .ikon::before {
+  opacity: 0.5;
+}
+
+.aside ul li a .teks{
+  position: relative;
+  padding: 0 15px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.aside.buka ul li a .teks {
+  opacity: 1;
+  visibility: visible;
+}
+
+.kirim {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.kembali {
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
